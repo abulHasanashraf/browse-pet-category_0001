@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Pet</title>
+    <!-- Font sora and ADLaM Display-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- DaisyUI and Tailwind CSS cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
+    <style>
+        .font-adlam-display {
+            font-family: "ADLaM Display", serif;
+        }
+
+        .font-sora {
+            font-family: "Sora", serif;
+        }
+    </style>
+    <!-- Tailwind multi-color config. -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                secondary: '#FFF9F4',
+                accent: '#FFDC26',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+
+<body class="font-sora">
+    <header>
+        <!-- Navigation section start -->
+        <nav class="bg-secondary max-sm:border-b-2 max-md:border-b-2 mb-20">
+            <div class="container mx-auto max-sm:px-4 py-5 flex flex-wrap items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <img src="./c1-assets/logo-header.png" alt="site logo">
+                    <h3 class="text-3xl">Browse<span class="text-accent">4</span>Pets</h3>
+                </div>
+                <div class="block max-md:hidden max-sm:hidden">
+                    <ul class="flex gap-9">
+                        <li><a class="text-xl" href="/">Find a pet</a></li>
+                        <li><a class="text-xl" href="/">Breeds</a></li>
+                        <li><a class="text-xl" href="/">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="space-x-4 block max-md:hidden max-sm:hidden">
+                    <i class="fa-regular fa-bell text-2xl"></i>
+                    <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+                    <button class="py-3 px-8 rounded-lg border border-accent text-xl">Login</button>
+                    <button class="py-3 px-8 rounded-lg bg-accent text-xl">Register</button>
+                </div>
+                <!-- Hambarger Icon -->
+                <i class="fa-solid fa-bars hidden text-2xl max-md:block max-sm:block"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
